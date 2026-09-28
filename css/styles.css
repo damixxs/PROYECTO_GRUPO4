@@ -39,3 +39,14 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
     aspect-ratio: 2 / 3;
     object-fit: cover;
 }
+/* ===== FOOTER ===== */
+.footer-bugle {
+  border-top: 2px solid var(--color-acento);
+  background: var(--color-fondo);
+}
+
+.footer-marca {
+  color: var(--color-acento);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
