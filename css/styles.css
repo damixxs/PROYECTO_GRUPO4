@@ -55,6 +55,7 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
   .welcome-box {
     padding: 24px;
   }
+  
 
   .btn-welcome {
     font-size: 1.2rem;
