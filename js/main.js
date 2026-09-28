@@ -1,5 +1,9 @@
 function enterCatalog() {
-  document.getElementById('landing-screen').style.display = 'none';
-  document.getElementById('catalog-screen').style.display = 'block';
-  window.scrollTo(0, 0);
+  const landingScreen = document.getElementById('landing-screen');
+  const catalogScreen = document.getElementById('catalog-screen');
+
+  if (landingScreen && catalogScreen) {
+    landingScreen.style.display = 'none';
+    catalogScreen.style.display = 'block';
+  }
 }
