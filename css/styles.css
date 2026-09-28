@@ -21,3 +21,21 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
   padding: 15px 45px; border-radius: 50px; box-shadow: 0 0 20px rgba(var(--color-acento-rgb), 0.6);
 }
 .btn-welcome:hover { background-color: var(--color-acento-hover); transform: scale(1.08); color: white; }
+
+/*  TARJETAS  */
+.movie-card .card {
+    background: var(--color-caja);
+    border: 1px solid rgba(var(--color-acento-rgb), 0.35);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.movie-card:hover .card {
+    transform: translateY(-8px);
+    border-color: var(--color-acento);
+    box-shadow: 0 0 22px rgba(var(--color-acento-rgb), 0.55);
+}
+
+.movie-card .card-img-top {
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
