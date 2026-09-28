@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <section id="landing-screen">
     <div class="welcome-box">
@@ -17,7 +19,7 @@
     </div>
   </section>
 
-    <div id="catalog-screen" style="display: none;">
+  <div id="catalog-screen" style="display: none;">
 
     <!-- NAVBAR (feature/navbar-y-hero) -->
 
@@ -28,6 +30,897 @@
     <!-- MODALS DEL REPRODUCTOR (feature/reproductor-google-drive) -->
 
     <!-- MULTIMEDIA EXTRA (feature/seccion-multimedia-extra) -->
+    <section id="multimedia-extra" class="container py-5">
+
+      <!-- ENCABEZADO -->
+      <div class="text-center mb-5">
+
+        <span class="badge bg-danger px-3 py-2 mb-3">
+          🔴 BUGLE-STREAM EXCLUSIVE
+        </span>
+
+        <h2 class="display-6 fw-bold">
+          DAILY BUGLE | ARCHIVOS CLASIFICADOS
+        </h2>
+
+        <p class="text-white-50">
+          Reportajes exclusivos, investigaciones y documentos
+          recuperados de los servidores de Oscorp.
+        </p>
+
+      </div>
+
+
+      <!-- ==================================================== -->
+      <!-- DAILY BUGLE                                          -->
+      <!-- ==================================================== -->
+
+      <div class="mb-5">
+
+        <small class="text-danger fw-bold">
+          BUGLE NEWS NETWORK
+        </small>
+
+        <h3 class="mb-4">
+          📰 Reportajes Especiales
+        </h3>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+          <!-- REPORTAJE 1 -->
+          <div class="col">
+
+            <article class="card h-100 bg-dark text-white border-danger shadow">
+
+              <div class="card-body d-flex flex-column">
+
+                <div class="mb-3">
+
+                  <span class="badge bg-danger">
+                    ● EN VIVO
+                  </span>
+
+                  <span class="badge bg-secondary">
+                    MANHATTAN
+                  </span>
+
+                </div>
+
+                <h4 class="card-title">
+                  ¿Spider-Man: héroe o amenaza?
+                </h4>
+
+                <p class="card-text text-white-50 flex-grow-1">
+                  El Daily Bugle investiga las recientes apariciones
+                  del vigilante enmascarado y su impacto en la
+                  seguridad de Nueva York.
+                </p>
+
+                <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalReportaje1">
+
+                  📰 LEER REPORTAJE
+
+                </button>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- REPORTAJE 2 -->
+          <div class="col">
+
+            <article class="card h-100 bg-dark text-white border-warning shadow">
+
+              <div class="card-body d-flex flex-column">
+
+                <div class="mb-3">
+
+                  <span class="badge bg-warning text-dark">
+                    INVESTIGACIÓN
+                  </span>
+
+                  <span class="badge bg-secondary">
+                    NUEVA YORK
+                  </span>
+
+                </div>
+
+                <h4 class="card-title">
+                  Caos en Manhattan
+                </h4>
+
+                <p class="card-text text-white-50 flex-grow-1">
+                  Extraños incidentes han sido registrados durante
+                  las últimas horas. Testigos aseguran haber visto
+                  tecnología desconocida.
+                </p>
+
+                <button type="button" class="btn btn-outline-warning w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalReportaje2">
+
+                  🔎 VER INVESTIGACIÓN
+
+                </button>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- REPORTAJE 3 -->
+          <div class="col">
+
+            <article class="card h-100 bg-dark text-white border-secondary shadow">
+
+              <div class="card-body d-flex flex-column">
+
+                <div class="mb-3">
+
+                  <span class="badge bg-secondary">
+                    ARCHIVO HISTÓRICO
+                  </span>
+
+                </div>
+
+                <h4 class="card-title">
+                  Los enemigos de Spider-Man
+                </h4>
+
+                <p class="card-text text-white-50 flex-grow-1">
+                  El archivo del Daily Bugle recopila información
+                  sobre algunos de los individuos más peligrosos
+                  que han amenazado Nueva York.
+                </p>
+
+                <button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalReportaje3">
+
+                  📁 ABRIR ARCHIVO
+
+                </button>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================================== -->
+      <!-- OSCORP                                               -->
+      <!-- ==================================================== -->
+
+      <div class="mt-5 pt-4 border-top border-secondary">
+
+        <small class="text-warning fw-bold">
+          ⚠ ACCESO NO AUTORIZADO
+        </small>
+
+        <h3 class="mb-1">
+          OSCORP INDUSTRIES
+        </h3>
+
+        <p class="text-white-50">
+          Base de datos clasificada — documentos recuperados.
+        </p>
+
+
+        <div class="alert alert-danger">
+
+          <strong>⚠ ADVERTENCIA:</strong>
+
+          El acceso a estos documentos está restringido.
+
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+          <!-- OSCORP EXP-001 -->
+          <div class="col">
+
+            <div class="card h-100 bg-black text-white border-danger shadow">
+
+              <div class="card-header border-danger">
+
+                <span class="badge bg-danger">
+                  TOP SECRET
+                </span>
+
+                <small class="float-end text-danger">
+                  EXP-001
+                </small>
+
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <h4>
+                  Proyecto Arácnido
+                </h4>
+
+                <p class="text-white-50 flex-grow-1">
+                  Investigación genética relacionada con especímenes
+                  arácnidos modificados experimentalmente.
+                </p>
+
+                <p class="small mb-1">
+                  NIVEL DE SEGURIDAD
+                </p>
+
+                <div class="progress mb-3">
+
+                  <div class="progress-bar bg-danger" style="width: 100%;">
+
+                    NIVEL 5
+
+                  </div>
+
+                </div>
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalOscorp1">
+
+                  🔐 ACCEDER AL ARCHIVO
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- OSCORP EXP-002 -->
+          <div class="col">
+
+            <div class="card h-100 bg-black text-white border-warning shadow">
+
+              <div class="card-header border-warning">
+
+                <span class="badge bg-warning text-dark">
+                  CONFIDENCIAL
+                </span>
+
+                <small class="float-end text-warning">
+                  EXP-002
+                </small>
+
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <h4>
+                  Tecnología Experimental
+                </h4>
+
+                <p class="text-white-50 flex-grow-1">
+                  Prototipos y tecnología avanzada desarrollada
+                  en los laboratorios privados de Oscorp Industries.
+                </p>
+
+                <p class="small mb-1">
+                  NIVEL DE SEGURIDAD
+                </p>
+
+                <div class="progress mb-3">
+
+                  <div class="progress-bar bg-warning text-dark" style="width: 75%;">
+
+                    NIVEL 4
+
+                  </div>
+
+                </div>
+
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                  data-bs-target="#modalOscorp2">
+
+                  🔐 ACCEDER AL ARCHIVO
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- OSCORP EXP-003 -->
+          <div class="col">
+
+            <div class="card h-100 bg-black text-white border-info shadow">
+
+              <div class="card-header border-info">
+
+                <span class="badge bg-info text-dark">
+                  ANOMALÍA
+                </span>
+
+                <small class="float-end text-info">
+                  EXP-003
+                </small>
+
+              </div>
+
+              <div class="card-body d-flex flex-column">
+
+                <h4>
+                  Archivo Multiversal
+                </h4>
+
+                <p class="text-white-50 flex-grow-1">
+                  Registros relacionados con anomalías
+                  espacio-temporales detectadas en diferentes
+                  puntos de Nueva York.
+                </p>
+
+                <p class="small mb-1">
+                  NIVEL DE SEGURIDAD
+                </p>
+
+                <div class="progress mb-3">
+
+                  <div class="progress-bar bg-info text-dark" style="width: 90%;">
+
+                    NIVEL 5
+
+                  </div>
+
+                </div>
+
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                  data-bs-target="#modalOscorp3">
+
+                  🔐 ACCEDER AL ARCHIVO
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- MODAL REPORTAJE 1                                      -->
+    <!-- ====================================================== -->
+
+    <div class="modal fade" id="modalReportaje1" tabindex="-1" aria-hidden="true">
+
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content bg-dark text-white">
+
+          <div class="modal-header border-danger">
+
+            <h5 class="modal-title">
+              📰 DAILY BUGLE | ÚLTIMA HORA
+            </h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+            </button>
+
+          </div>
+
+          <div class="modal-body">
+
+            <span class="badge bg-danger mb-3">
+              EXCLUSIVO
+            </span>
+
+            <h2>
+              ¿Spider-Man: héroe o amenaza?
+            </h2>
+
+            <p class="text-white-50">
+              NUEVA YORK — La presencia del misterioso vigilante
+              conocido como Spider-Man continúa generando debate
+              entre los ciudadanos.
+            </p>
+
+            <p>
+              Mientras algunos habitantes consideran que sus
+              intervenciones han evitado situaciones peligrosas,
+              otros cuestionan quién controla las acciones de
+              un individuo enmascarado con capacidades extraordinarias.
+            </p>
+
+            <blockquote class="border-start border-danger border-4 ps-3">
+              El Daily Bugle continuará investigando los
+              acontecimientos relacionados con Spider-Man.
+            </blockquote>
+
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+
+              CERRAR REPORTAJE
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- MODAL REPORTAJE 2                                      -->
+    <!-- ====================================================== -->
+
+    <div class="modal fade" id="modalReportaje2" tabindex="-1" aria-hidden="true">
+
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content bg-dark text-white">
+
+          <div class="modal-header border-warning">
+
+            <h5 class="modal-title">
+              🔎 INVESTIGACIÓN ESPECIAL
+            </h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+            </button>
+
+          </div>
+
+          <div class="modal-body">
+
+            <span class="badge bg-warning text-dark mb-3">
+              EN INVESTIGACIÓN
+            </span>
+
+            <h2>
+              Caos en Manhattan
+            </h2>
+
+            <p>
+              Diversos incidentes han sido reportados en Manhattan.
+              Testigos describen explosiones, persecuciones y
+              dispositivos tecnológicos de origen desconocido.
+            </p>
+
+            <div class="alert alert-warning">
+              🔎 Investigación abierta por el equipo del Daily Bugle.
+            </div>
+
+            <h5>
+              Evidencias registradas
+            </h5>
+
+            <ul class="list-group">
+
+              <li class="list-group-item bg-dark text-white">
+                ✓ Reportes de testigos
+              </li>
+
+              <li class="list-group-item bg-dark text-white">
+                ✓ Actividad tecnológica desconocida
+              </li>
+
+              <li class="list-group-item bg-dark text-white">
+                ✓ Presencia de Spider-Man
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+
+              CERRAR INVESTIGACIÓN
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- MODAL REPORTAJE 3                                      -->
+    <!-- ====================================================== -->
+
+    <div class="modal fade" id="modalReportaje3" tabindex="-1" aria-hidden="true">
+
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content bg-dark text-white">
+
+          <div class="modal-header">
+
+            <h5 class="modal-title">
+              📁 BUGLE ARCHIVES
+            </h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+            </button>
+
+          </div>
+
+          <div class="modal-body">
+
+            <h2>
+              Los enemigos de Spider-Man
+            </h2>
+
+            <p class="text-white-50">
+              Archivo histórico de incidentes registrados
+              por el Daily Bugle.
+            </p>
+
+            <ul class="list-group">
+
+              <li class="list-group-item bg-dark text-white">
+                🟢 Green Goblin
+                <span class="badge bg-danger float-end">
+                  AMENAZA ALTA
+                </span>
+              </li>
+
+              <li class="list-group-item bg-dark text-white">
+                🐙 Doctor Octopus
+                <span class="badge bg-danger float-end">
+                  AMENAZA ALTA
+                </span>
+              </li>
+
+              <li class="list-group-item bg-dark text-white">
+                ⚡ Electro
+                <span class="badge bg-warning text-dark float-end">
+                  CRÍTICO
+                </span>
+              </li>
+
+              <li class="list-group-item bg-dark text-white">
+                🦎 Lizard
+                <span class="badge bg-success float-end">
+                  BIOLÓGICO
+                </span>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+
+              CERRAR ARCHIVO
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- MODAL OSCORP EXP-001                                   -->
+    <!-- ====================================================== -->
+
+    <div class="modal fade" id="modalOscorp1" tabindex="-1" aria-hidden="true">
+
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content bg-black text-white border-danger">
+
+          <div class="modal-header border-danger">
+
+            <h5 class="modal-title text-danger">
+              🔐 OSCORP // EXP-001
+            </h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+            </button>
+
+          </div>
+
+          <div class="modal-body">
+
+            <div class="alert alert-danger">
+              ⚠ DOCUMENTO CLASIFICADO — NIVEL 5
+            </div>
+
+            <h2>
+              PROYECTO ARÁCNIDO
+            </h2>
+
+            <hr class="border-danger">
+
+            <p>
+              <strong>CÓDIGO:</strong> EXP-001
+            </p>
+
+            <p>
+              <strong>ESTADO:</strong>
+              <span class="text-danger fw-bold">
+                ACTIVO
+              </span>
+            </p>
+
+            <p>
+              <strong>DEPARTAMENTO:</strong>
+              Investigación Genética
+            </p>
+
+            <p>
+              <strong>NIVEL DE ACCESO:</strong>
+              5
+            </p>
+
+            <hr>
+
+            <h5>
+              DESCRIPCIÓN
+            </h5>
+
+            <p>
+              Programa experimental centrado en el estudio
+              de especímenes arácnidos genéticamente modificados.
+            </p>
+
+            <div class="border border-danger p-3">
+
+              <p class="text-danger fw-bold mb-1">
+                INFORMACIÓN CENSURADA
+              </p>
+
+              <p class="mb-0">
+                ███████████████████████████████
+              </p>
+
+              <p class="mb-0">
+                ███████████████████████
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="modal-footer border-danger">
+
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+
+              🔒 CERRAR ARCHIVO
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- MODAL OSCORP EXP-002                                   -->
+    <!-- ====================================================== -->
+
+    <div class="modal fade" id="modalOscorp2" tabindex="-1" aria-hidden="true">
+
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content bg-black text-white border-warning">
+
+          <div class="modal-header border-warning">
+
+            <h5 class="modal-title text-warning">
+              🔐 OSCORP // EXP-002
+            </h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+            </button>
+
+          </div>
+
+          <div class="modal-body">
+
+            <div class="alert alert-warning">
+              ⚠ ACCESO CONFIDENCIAL
+            </div>
+
+            <h2>
+              TECNOLOGÍA EXPERIMENTAL
+            </h2>
+
+            <hr class="border-warning">
+
+            <p>
+              <strong>CÓDIGO:</strong> EXP-002
+            </p>
+
+            <p>
+              <strong>ESTADO:</strong> FASE DE PRUEBAS
+            </p>
+
+            <p>
+              <strong>DIVISIÓN:</strong> Desarrollo Tecnológico
+            </p>
+
+            <h5 class="mt-4">
+              DESCRIPCIÓN
+            </h5>
+
+            <p>
+              Archivo relacionado con prototipos,
+              sistemas avanzados y tecnología experimental
+              desarrollada por Oscorp Industries.
+            </p>
+
+            <p class="small text-white-50 mb-1">
+              PROGRESO DEL PROYECTO
+            </p>
+
+            <div class="progress">
+
+              <div class="progress-bar progress-bar-striped
+                   progress-bar-animated bg-warning text-dark" style="width: 74%;">
+
+                DESARROLLO 74%
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="modal-footer border-warning">
+
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+
+              🔒 CERRAR ARCHIVO
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- MODAL OSCORP EXP-003                                   -->
+    <!-- ====================================================== -->
+
+    <div class="modal fade" id="modalOscorp3" tabindex="-1" aria-hidden="true">
+
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content bg-black text-white border-info">
+
+          <div class="modal-header border-info">
+
+            <h5 class="modal-title text-info">
+              ⚠ OSCORP // EXP-003
+            </h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+            </button>
+
+          </div>
+
+          <div class="modal-body">
+
+            <div class="alert alert-info">
+              ⚠ ANOMALÍA DETECTADA
+            </div>
+
+            <h2>
+              ARCHIVO MULTIVERSAL
+            </h2>
+
+            <hr class="border-info">
+
+            <p>
+              <strong>CÓDIGO:</strong> EXP-003
+            </p>
+
+            <p>
+              <strong>CLASIFICACIÓN:</strong>
+              EVENTO DESCONOCIDO
+            </p>
+
+            <p>
+              <strong>ESTADO:</strong>
+
+              <span class="text-info fw-bold">
+                EN ANÁLISIS
+              </span>
+
+            </p>
+
+            <h5 class="mt-4">
+              REPORTE
+            </h5>
+
+            <p>
+              Los sensores de Oscorp han registrado alteraciones
+              energéticas que no coinciden con ningún fenómeno conocido.
+            </p>
+
+            <p class="small text-white-50 mb-1">
+              ANALIZANDO DATOS RECUPERADOS...
+            </p>
+
+            <div class="progress">
+
+              <div class="progress-bar progress-bar-striped
+                   progress-bar-animated bg-info text-dark" style="width: 87%;">
+
+                ANALIZANDO 87%
+
+              </div>
+
+            </div>
+
+            <div class="alert alert-dark border-info text-info mt-4">
+
+              SISTEMA: Posible alteración espacio-temporal detectada.
+
+            </div>
+
+          </div>
+
+          <div class="modal-footer border-info">
+
+            <button type="button" class="btn btn-info" data-bs-dismiss="modal">
+
+              🔒 CERRAR ARCHIVO
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
     <!-- FOOTER (feature/estilos-spidey-custom) -->
 
@@ -36,4 +929,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
