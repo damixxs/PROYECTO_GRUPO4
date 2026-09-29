@@ -80,7 +80,11 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
               url('../img/hero-spiderman.jpg') center/cover no-repeat;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* ===== BUSCADOR ===== */
+
 #buscador {
     transition: box-shadow .25s ease, border-color .25s ease;
 }
