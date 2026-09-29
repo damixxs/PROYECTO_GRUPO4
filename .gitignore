@@ -1,0 +1,32 @@
+# Node.js
+# node_modules ocupa mucho espacio y se regenera con "npm install",
+# no debe versionarse.
+node_modules/
+npm-debug.log
+.env
+
+
+# Pyhton 
+# __pychache__ y los .pyc son archivos compilados/generados automaticamente
+# por el interprete, no aportan nada al control de versiones.
+__pycache__/
+*.pyc
+venv/
+
+
+# Java
+# Los .class son bytecode compilado (se regenera al compilar),
+# y target/ o build/ son carpetas generadas por Maven/Gradle.
+*.class
+target/
+build/
+*.jar
+
+
+# Generales del proyecto
+# Archivos de configuracion del editor/IDE y del sistema operativo,
+# no tienen relacion con el codigo del sitio web.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
