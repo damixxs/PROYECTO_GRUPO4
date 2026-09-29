@@ -76,7 +76,7 @@
             <img src="img/poster-spider-man-2002.jpg" class="card-img-top" alt="Spider-Man 2002">
             <div class="card-body">
               <h5 class="card-title">Spider-Man (2002)</h5>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-spider-man-2002">Ver</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalSpiderman">Ver</button>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
             <img src="img/poster-the-amazing-spider-man.jpg" class="card-img-top" alt="The Amazing Spider-Man">
             <div class="card-body">
               <h5 class="card-title">The Amazing Spider-Man</h5>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-the-amazing-spider-man">Ver</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalAmazingSpiderman">Ver</button>
             </div>
           </div>
         </div>
@@ -96,7 +96,8 @@
             <img src="img/poster-spider-man-homecoming.jpg" class="card-img-top" alt="Spider-Man Homecoming">
             <div class="card-body">
               <h5 class="card-title">Spider-Man: Homecoming</h5>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-spider-man-homecoming">Ver</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalHomecoming">Ver</button>
+
             </div>
           </div>
         </div>
@@ -106,7 +107,7 @@
             <img src="img/poster-spider-man-no-way-home.jpg" class="card-img-top" alt="Spider-Man No Way Home">
             <div class="card-body">
               <h5 class="card-title">Spider-Man: No Way Home</h5>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-spider-man-no-way-home">Ver</button>
+             <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalNoWayHome">Ver</button>
             </div>
           </div>
         </div>
@@ -116,7 +117,7 @@
             <img src="img/poster-into-the-spider-verse.jpg" class="card-img-top" alt="Into the Spider-Verse">
             <div class="card-body">
               <h5 class="card-title">Into the Spider-Verse</h5>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-into-the-spider-verse">Ver</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalIntoSpiderVerse">Ver</button>
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@
             <img src="img/poster-across-the-spider-verse.jpg" class="card-img-top" alt="Across the Spider-Verse">
             <div class="card-body">
               <h5 class="card-title">Across the Spider-Verse</h5>
-              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-across-the-spider-verse">Ver</button>
+             <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalAcrossSpiderVerse">Ver</button>
             </div>
           </div>
         </div>
@@ -135,6 +136,34 @@
 
       <p id="sin-resultados" class="text-center d-none mt-4">No se encontraron películas.</p>
     </section>
+feature/reproductor-catalog-links
+    <!-- MODALS DEL REPRODUCTOR (feature/reproductor-catalog-links) -->
+
+    <!-- Botón de prueba (Carpeta General) -->
+    <button class="btn btn-danger m-4" data-bs-toggle="modal" data-bs-target="#modalProbarReproductor">
+      PROBAR REPRODUCTOR
+    </button>
+
+    <!-- Modal de Prueba: Vista General de la Carpeta Drive -->
+    <div class="modal fade" id="modalProbarReproductor" tabindex="-1" aria-labelledby="modalProbarReproductorLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border border-danger">
+          <div class="modal-header border-danger">
+            <div>
+              <span class="badge bg-danger mb-2">BUGLE-STREAM</span>
+              <h5 class="modal-title" id="modalProbarReproductorLabel">Catálogo en Google Drive</h5>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe data-src="https://drive.google.com/embeddedfolderview?id=1iPib2zpPtInTe5ajDbV2qK0xJldk2eXh#grid" title="Carpeta General" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="mt-3">
+              <h6 class="text-danger">Servidor de Archivos BUGLE-STREAM</h6>
+              <p class="text-white-50 mb-0">Acceso general a la carpeta de videos en Google Drive.</p>
+            </div>
+          </div>
 <!-- MODALS DEL REPRODUCTOR (feature/reproductor-google-drive) -->
 
 <!-- Modal 1: Spider-Man (Prueba General) -->
@@ -169,6 +198,7 @@
           <p class="text-white-50 mb-0">
             Acceso general a la carpeta de videos en Google Drive.
           </p>
+develop
         </div>
       </div>
 
@@ -176,198 +206,154 @@
   </div>
 </div>
 
-
-    <!-- Modal 2: Spider-Man 2 -->
-    <div class="modal fade" id="modalSpiderman2" tabindex="-1" aria-labelledby="modalSpiderman2Label"
-      aria-hidden="true">
+    <!-- Modal 1: Spider-Man (2002) -->
+    <div class="modal fade" id="modalSpiderman" tabindex="-1" aria-labelledby="modalSpidermanLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark text-white border border-danger">
-
           <div class="modal-header border-danger">
             <div>
               <span class="badge bg-danger mb-2">BUGLE-STREAM</span>
-              <h5 class="modal-title" id="modalSpiderman2Label">
-                Spider-Man 2
-              </h5>
+              <h5 class="modal-title" id="modalSpidermanLabel">Spider-Man (2002)</h5>
             </div>
-
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar">
-            </button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-
           <div class="modal-body">
             <div class="ratio ratio-16x9">
+feature/reproductor-catalog-links
+              <iframe data-src="https://drive.google.com/file/d/1whT3afs49sIEh_yYsE3-55WmBw6E3tDQ/preview" title="Spider-Man (2002)" allow="autoplay; fullscreen" allowfullscreen></iframe>
               <iframe data-src="https://drive.google.com/file/d/ID_VIDEO_2/preview" title="Spider-Man 2"
                 allow="autoplay; fullscreen" allowfullscreen>
               </iframe>
+develop
             </div>
-
             <div class="mt-3">
-              <h6 class="text-danger">Spider-Man 2</h6>
-              <p class="text-white-50 mb-0">
-                Transmisión disponible a través de la red BUGLE-STREAM.
-              </p>
+              <h6 class="text-danger">Spider-Man (2002)</h6>
+              <p class="text-white-50 mb-0">Transmisión disponible a través de la red BUGLE-STREAM.</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
-
-    <!-- Modal 3: The Amazing Spider-Man -->
-    <div class="modal fade" id="modalAmazingSpiderman" tabindex="-1" aria-labelledby="modalAmazingSpidermanLabel"
-      aria-hidden="true">
+    <!-- Modal 2: The Amazing Spider-Man -->
+    <div class="modal fade" id="modalAmazingSpiderman" tabindex="-1" aria-labelledby="modalAmazingSpidermanLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark text-white border border-danger">
-
           <div class="modal-header border-danger">
             <div>
               <span class="badge bg-danger mb-2">BUGLE-STREAM</span>
-              <h5 class="modal-title" id="modalAmazingSpidermanLabel">
-                The Amazing Spider-Man
-              </h5>
+              <h5 class="modal-title" id="modalAmazingSpidermanLabel">The Amazing Spider-Man</h5>
             </div>
-
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar">
-            </button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-
           <div class="modal-body">
             <div class="ratio ratio-16x9">
-              <iframe src="https://drive.google.com/file/d/ID_VIDEO_3/preview" title="The Amazing Spider-Man"
-                allow="autoplay; fullscreen" allowfullscreen>
-              </iframe>
+              <iframe data-src="https://drive.google.com/file/d/19gPXMknPPrDR2fWk7f6sneanzHvZS_Cd/preview" title="The Amazing Spider-Man" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
-
             <div class="mt-3">
               <h6 class="text-danger">The Amazing Spider-Man</h6>
-              <p class="text-white-50 mb-0">
-                Transmisión disponible a través de la red BUGLE-STREAM.
-              </p>
+              <p class="text-white-50 mb-0">Transmisión disponible a través de la red BUGLE-STREAM.</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
-
-    <!-- Modal 4: Spider-Man Homecoming -->
-    <div class="modal fade" id="modalHomecoming" tabindex="-1" aria-labelledby="modalHomecomingLabel"
-      aria-hidden="true">
+    <!-- Modal 3: Spider-Man: Homecoming -->
+    <div class="modal fade" id="modalHomecoming" tabindex="-1" aria-labelledby="modalHomecomingLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark text-white border border-danger">
-
           <div class="modal-header border-danger">
             <div>
               <span class="badge bg-danger mb-2">BUGLE-STREAM</span>
-              <h5 class="modal-title" id="modalHomecomingLabel">
-                Spider-Man: Homecoming
-              </h5>
+              <h5 class="modal-title" id="modalHomecomingLabel">Spider-Man: Homecoming</h5>
             </div>
-
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar">
-            </button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-
           <div class="modal-body">
             <div class="ratio ratio-16x9">
-              <iframe src="https://drive.google.com/file/d/ID_VIDEO_4/preview" title="Spider-Man Homecoming"
-                allow="autoplay; fullscreen" allowfullscreen>
-              </iframe>
+              <iframe data-src="https://drive.google.com/file/d/1KBQqjYYPmCauGCCp-yqxu1NXnl2cYEDt/preview" title="Spider-Man: Homecoming" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
-
             <div class="mt-3">
               <h6 class="text-danger">Spider-Man: Homecoming</h6>
-              <p class="text-white-50 mb-0">
-                Transmisión disponible a través de la red BUGLE-STREAM.
-              </p>
+              <p class="text-white-50 mb-0">Transmisión disponible a través de la red BUGLE-STREAM.</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
-
-    <!-- Modal 5: Spider-Man Into the Spider-Verse -->
-    <div class="modal fade" id="modalSpiderVerse" tabindex="-1" aria-labelledby="modalSpiderVerseLabel"
-      aria-hidden="true">
+    <!-- Modal 4: Spider-Man: No Way Home -->
+    <div class="modal fade" id="modalNoWayHome" tabindex="-1" aria-labelledby="modalNoWayHomeLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark text-white border border-danger">
-
           <div class="modal-header border-danger">
             <div>
               <span class="badge bg-danger mb-2">BUGLE-STREAM</span>
-              <h5 class="modal-title" id="modalSpiderVerseLabel">
-                Spider-Man: Into the Spider-Verse
-              </h5>
+              <h5 class="modal-title" id="modalNoWayHomeLabel">Spider-Man: No Way Home</h5>
             </div>
-
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar">
-            </button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-
           <div class="modal-body">
             <div class="ratio ratio-16x9">
-              <iframe src="https://drive.google.com/file/d/ID_VIDEO_5/preview" title="Spider-Man Into the Spider-Verse"
-                allow="autoplay; fullscreen" allowfullscreen>
-              </iframe>
+              <iframe data-src="https://drive.google.com/file/d/198pn8xUInJh31OjWoLHX0JWfsRt2VwQQ/preview" title="Spider-Man: No Way Home" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
-
             <div class="mt-3">
-              <h6 class="text-danger">Spider-Man: Into the Spider-Verse</h6>
-              <p class="text-white-50 mb-0">
-                Transmisión disponible a través de la red BUGLE-STREAM.
-              </p>
+              <h6 class="text-danger">Spider-Man: No Way Home</h6>
+              <p class="text-white-50 mb-0">Transmisión disponible a través de la red BUGLE-STREAM.</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
+    <!-- Modal 5: Into the Spider-Verse -->
+    <div class="modal fade" id="modalIntoSpiderVerse" tabindex="-1" aria-labelledby="modalIntoSpiderVerseLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border border-danger">
+          <div class="modal-header border-danger">
+            <div>
+              <span class="badge bg-danger mb-2">BUGLE-STREAM</span>
+              <h5 class="modal-title" id="modalIntoSpiderVerseLabel">Into the Spider-Verse</h5>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe data-src="https://drive.google.com/file/d/1zijhE96st6ktFSvXHoU1oE8MHMYFK-nc/preview" title="Into the Spider-Verse" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="mt-3">
+              <h6 class="text-danger">Into the Spider-Verse</h6>
+              <p class="text-white-50 mb-0">Transmisión disponible a través de la red BUGLE-STREAM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal 6: Across the Spider-Verse -->
-    <div class="modal fade" id="modalAcrossSpiderVerse" tabindex="-1" aria-labelledby="modalAcrossSpiderVerseLabel"
-      aria-hidden="true">
+    <div class="modal fade" id="modalAcrossSpiderVerse" tabindex="-1" aria-labelledby="modalAcrossSpiderVerseLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark text-white border border-danger">
-
           <div class="modal-header border-danger">
             <div>
               <span class="badge bg-danger mb-2">BUGLE-STREAM</span>
-              <h5 class="modal-title" id="modalAcrossSpiderVerseLabel">
-                Spider-Man: Across the Spider-Verse
-              </h5>
+              <h5 class="modal-title" id="modalAcrossSpiderVerseLabel">Across the Spider-Verse</h5>
             </div>
-
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar">
-            </button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-
           <div class="modal-body">
             <div class="ratio ratio-16x9">
-              <iframe src="https://drive.google.com/file/d/ID_VIDEO_6/preview"
-                title="Spider-Man Across the Spider-Verse" allow="autoplay; fullscreen" allowfullscreen>
-              </iframe>
+              <iframe data-src="https://drive.google.com/file/d/1PE6cxBoyGcvKrP5CaWylzoRbMHH-2sgT/preview" title="Across the Spider-Verse" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
-
             <div class="mt-3">
-              <h6 class="text-danger">
-                Spider-Man: Across the Spider-Verse
-              </h6>
-              <p class="text-white-50 mb-0">
-                Transmisión disponible a través de la red BUGLE-STREAM.
-              </p>
+              <h6 class="text-danger">Across the Spider-Verse</h6>
+              <p class="text-white-50 mb-0">Transmisión disponible a través de la red BUGLE-STREAM.</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
     <!-- MULTIMEDIA EXTRA (feature/seccion-multimedia-extra) -->
     <section id="multimedia-extra" class="container py-5">
 
