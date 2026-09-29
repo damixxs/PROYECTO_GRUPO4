@@ -74,3 +74,7 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
   background: linear-gradient(180deg, rgba(13,14,18,0.4) 0%, rgba(13,14,18,0.95) 100%),
               url('../img/hero-spiderman.jpg') center/cover no-repeat;
 }
+
+html {
+    scroll-behavior: smooth;
+}
