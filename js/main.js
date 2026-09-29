@@ -10,3 +10,5 @@ function enterCatalog() {
     if (buscador) buscador.focus();
   }
 }
+const spanAnio = document.getElementById('anio-actual');
+if (spanAnio) spanAnio.textContent = new Date().getFullYear();
