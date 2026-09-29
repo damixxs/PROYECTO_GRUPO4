@@ -1,3 +1,4 @@
+feature/reproductor-catalog-links
 document.addEventListener('DOMContentLoaded', function () {
   // Cuando cualquier modal se va a mostrar
   const modals = document.querySelectorAll('.modal');
@@ -17,5 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
         iframe.removeAttribute('src');
       }
     });
+// js/reproductor.js
+document.querySelectorAll('.modal').forEach((modal) => {
+  const iframe = modal.querySelector('iframe[data-src]');
+  if (!iframe) return;
+
+  modal.addEventListener('show.bs.modal', () => {
+    iframe.src = iframe.dataset.src;
+  });
+
+  modal.addEventListener('hidden.bs.modal', () => {
+    iframe.src = '';
+develop
   });
 });
