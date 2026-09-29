@@ -79,3 +79,13 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
   background: linear-gradient(180deg, rgba(13,14,18,0.4) 0%, rgba(13,14,18,0.95) 100%),
               url('../img/hero-spiderman.jpg') center/cover no-repeat;
 }
+
+/* ===== BUSCADOR ===== */
+#buscador {
+    transition: box-shadow .25s ease, border-color .25s ease;
+}
+
+#buscador:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 12px rgba(var(--color-acento-rgb), 0.6);
+}
