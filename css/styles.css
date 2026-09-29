@@ -62,3 +62,15 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
     padding: 12px 32px;
   }
 }
+
+/* ===== NAVBAR Y HERO ===== */
+.navbar-bugle {
+  background: var(--color-fondo);
+  border-bottom: 1px solid rgba(var(--color-acento-rgb), 0.3);
+}
+
+.hero-bugle {
+  min-height: 70vh;
+  background: linear-gradient(180deg, rgba(13,14,18,0.4) 0%, rgba(13,14,18,0.95) 100%),
+              url('../img/hero-spiderman.jpg') center/cover no-repeat;
+}
