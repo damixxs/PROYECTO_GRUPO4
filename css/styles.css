@@ -38,6 +38,11 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
 .movie-card .card-img-top {
     aspect-ratio: 2 / 3;
     object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.movie-card:hover .card-img-top {
+    transform: scale(1.06);
 }
 /* ===== FOOTER ===== */
 .footer-bugle {
@@ -77,4 +82,14 @@ body { background-color: var(--color-fondo); color: #ffffff; font-family: 'Segoe
 
 html {
     scroll-behavior: smooth;
+}
+/* ===== BUSCADOR ===== */
+
+#buscador {
+    transition: box-shadow .25s ease, border-color .25s ease;
+}
+
+#buscador:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 12px rgba(var(--color-acento-rgb), 0.6);
 }
